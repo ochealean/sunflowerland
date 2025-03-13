@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        table {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 20px;
+            background-color: transparent;
+            border: 1px solid black;
+            cursor: pointer;
+            border-color: black;
+            border-radius: 10px;
+        }
+        #app {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, p {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <table border="1">
+            <tr>
+                <th>Harvest</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td><img src="sunflower.png" alt="sunflower"></td>
+                <td><input type="number" value="0" id="sunflower_int"></td>
+            </tr>
+            <tr>
+                <td><img src="rhubarb.png" alt="rhubarb"></td>
+                <td><input type="number" value="0" id="rhubarb_int"></td>
+            </tr>
+            <tr>    
+                <td><img src="carrot.png" alt="carrot"></td>
+                <td><input type="number" value="0" id="carrot_int"></td>
+            </tr>
+            <tr>
+                <td><img src="cabbage.png" alt="cabbage"></td>
+                <td><input type="number" value="0" id="cabbage_int"></td>
+            </tr>
+            <tr>
+                <td><img src="soybean.png" alt="soybean"></td>
+                <td><input type="number" value="0" id="soybean_int"></td>
+            </tr>
+            <tr>
+                <td><img src="corn.png" alt="corn"></td>
+                <td><input type="number" value="0" id="corn_int"></td>
+            </tr>
+            <tr>
+                <td><img src="wheat.png" alt="wheat"></td>
+                <td><input type="number" value="0" id="wheat_int"></td>
+            </tr>
+            <tr>
+                <td><img src="kale.png" alt="kale"></td>
+                <td><input type="number" value="0" id="kale_int"></td>
+            </tr>
+        </table>
+        <button id="calc_btn">Calculate</button>
+        <p id="result"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
